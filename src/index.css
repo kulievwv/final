@@ -1,0 +1,562 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    @font-face {
+        font-family: 'TT Lakes';
+        src: url('./fonts/TTLakes-Light.woff');
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Lakes';
+        src: url('./fonts/TTLakes-Regular.woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Lakes';
+        src: url('./fonts/TTLakes-Medium.woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Lakes';
+        src: url('./fonts/TTLakes-DemiBold.woff');
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Lakes';
+        src: url('./fonts/TTLakes-Bold.woff');
+        font-weight: 800;
+        font-style: normal;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'TT Lakes', "Arial", sans-serif;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 88px;
+        border-bottom: 1px solid #D9FFF5;
+        padding: 0 16px;
+        background-color: white;
+    }
+    
+    .header__right {
+        display: flex;
+        margin-left: auto;
+        gap: 16px;
+        align-items: center;
+    }
+    
+    .header__left {
+        display: flex;
+        margin-right: auto;
+        gap: 16px;
+        align-items: center;
+    }
+    
+    .logo {
+        width: auto;
+        flex-grow: 1;
+    }
+    
+    .title {
+        margin-left: 30px;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'TT Lakes', "Arial", sans-serif;
+    }
+    
+    .navigation__buttons {
+        display: inline-block;
+        width: auto;
+        height: 40px;
+        white-space: nowrap;
+        background-color: #F8F8F8;
+        border: none;
+        padding: 8px 9px 8px 16px;
+        color: #7E7E82;
+        font-family: 'TT Lakes', "Arial", sans-serif;
+    }
+    
+    .about-company__more {
+        background-image: url(images/expand.svg);
+        background-repeat: no-repeat;
+        background-color: #F8F8F8;
+        text-decoration: none;
+        color: black;
+        margin: 14px 172px 14px 9px;
+        background-position: -2px -1px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        min-width: 132px;
+        min-height: 24px;
+        text-align: right;
+        padding: 4px 0;
+    }
+    
+    .about-company__first-p {
+        margin-top: 0;
+    }
+    
+    .main {
+        max-width: 1220px;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        background-color: #F8F8F8;
+    }
+    
+    .navigation__buttons:hover {
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        background-color: white;
+    }
+    
+    @media (max-width: 767px) {
+        .title-container {
+            padding: 24px 16px 24px 0px;
+            background-image: url(images/highlight.svg);
+            background-repeat: no-repeat;
+            background-size: 3px 30px;
+            background-position: 0;
+            text-align: left;
+        }
+        .navigation {
+            padding-left: 16px;
+            display: flex;
+            overflow: scroll;
+        }
+        .about-company__first-p {
+            padding: 24px 16px 0 16px;
+            margin: 0;
+            color: black;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .devices {
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            display: inline-block;
+            width: auto;
+            height: auto;
+            background-color: white;
+        }
+        .header__left>.header__stick {
+            display: none;
+        }
+        .header__call,
+        .header__chat,
+        .header__profile {
+            display: none;
+        }
+        .about-company__more {
+            margin-right: 600px;
+        }
+        .about-company__image {
+            width: 100%;
+            height: 55vw;
+            border-radius: 7px;
+        }
+        .about-company__second-p {
+            display: none;
+        }
+        .about-company__second-p-full {
+            display: none;
+        }
+        .title-container__sidebar {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1119px) {
+        .title-container {
+            padding: 24px 16px 24px 0px;
+            background-image: url(images/highlight.svg);
+            background-repeat: no-repeat;
+            background-size: 3px 30px;
+            background-position: 0;
+            text-align: left;
+        }
+        .about-company__description {
+            width: 312px;
+            height: 160px;
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            padding-left: 24px;
+        }
+        .about-company__second-p {
+            margin-bottom: 0;
+        }
+        .about-company {
+            display: flex;
+            padding: 32px 25px 40px 24px;
+        }
+        .devices {
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            display: inline-block;
+            width: auto;
+            height: auto;
+            background-color: white;
+        }
+        .about-company__image-container {
+            margin-left: auto;
+        }
+        .about-company__image {
+            width: 360px;
+            height: 208px;
+            border-radius: 7px;
+        }
+        .navigation {
+            padding-left: 24px;
+            display: flex;
+            overflow: scroll;
+        }
+        .about-company__second-p-full {
+            display: none;
+        }
+        .title-container__sidebar {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 1120px) {
+        .header {
+            display: none;
+        }
+        .title-container {
+            display: flex;
+            padding: 24px 16px 24px 0px;
+            background-image: url(images/highlight2.svg);
+            background-repeat: no-repeat;
+            background-size: 3px 30px;
+            background-position: 0 28px;
+            text-align: left;
+        }
+        .title-container__sidebar {
+            margin-left: auto;
+        }
+        .navigation {
+            display: flex;
+            padding: 0 35px 0 33px;
+            flex-wrap: wrap;
+        }
+        .about-company__second-p {
+            display: none;
+        }
+        .about-company__description {
+            font-size: 14px;
+            width: 490px;
+            height: 198px;
+            padding: 20px 36px 0 34px;
+        }
+        .about-company {
+            display: flex;
+        }
+        .about-company__image-container {
+            margin-left: auto;
+            padding: 20px 28px 38px 0;
+        }
+        .about-company__image {
+            width: 531px;
+            height: 306px;
+            border-radius: 7px;
+        }
+        .title-container__sidebar {
+            display: flex;
+            font-weight: 500;
+        }
+        .title-container__submit-application,
+        .title-container__chech-status {
+            padding-right: 80px;
+            background-repeat: no-repeat;
+            background-position: 133px 0px;
+            align-items: center;
+            border: none;
+            background-color: #F8F8F8;
+            font-weight: 500;
+            font-family: 'TT Lakes', "Arial", sans-serif;
+            font-size: 16px;
+            height: 40px;
+        }
+        .title-container__submit-application {
+            background-image: url(images/repair.svg);
+        }
+        .title-container__chech-status {
+            background-image: url(images/checkstatus.svg);
+        }
+    }
+    /* Swiper */
+    
+    .brands__header {
+        background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+        height: 56px;
+        font-family: TT Lakes;
+        padding: 16px;
+        border-top: 1px solid #D9FFF5;
+    }
+    
+    .button {
+        max-width: 240px;
+        height: 72px;
+        border: 1px solid #EAEAEA;
+        border-radius: 5px;
+        background-color: white;
+        align-items: center;
+        display: flex;
+    }
+    
+    .arrow {
+        background-image: url("images/arrow.svg");
+        width: 40px;
+        height: 40px;
+        margin: 16px 16px 16px auto;
+    }
+    
+    .lenovo {
+        width: 108px;
+        height: 32px;
+        margin-left: 16px;
+    }
+    
+    .samsung {
+        width: 116px;
+        height: 39px;
+        margin-left: 16px;
+    }
+    
+    .apple {
+        width: 44px;
+        height: 44px;
+        margin-left: 16px;
+    }
+    
+    .view_sonic {
+        width: 128px;
+        height: 21px;
+        margin-left: 14px;
+    }
+    
+    .bosch {
+        width: 128px;
+        height: 28px;
+        margin-left: 16px;
+    }
+    
+    .hp {
+        width: 52px;
+        height: 52px;
+        margin-left: 10px;
+    }
+    
+    .acer {
+        height: 24px;
+        width: 94px;
+        margin-left: 16px;
+    }
+    
+    .sony {
+        height: 25px;
+        width: 128px;
+        margin-left: 14px;
+    }
+    
+    @media (max-width: 767px) {
+        .swiper1 {
+            width: 240px;
+            height: 110px;
+            margin-top: 16px !important;
+        }
+        .swiper2 {
+            width: 240px;
+            height: 210px;
+        }
+        .swiper-slide div {
+            object-fit: none;
+        }
+        .header {
+            background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+            height: 80px;
+            font-family: TT Lakes;
+            padding: 16px;
+        }
+        .brands_navigation {
+            display: none;
+        }
+        .swiper-pagination,
+        .swiper-pagination-2 {
+            position: relative !important;
+        }
+        .swiper-pagination-2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .show_more {
+            display: none !important;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .firstSwiper {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 16px;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .firstSwiperHide {
+            height: 160px !important;
+            overflow: hidden;
+        }
+        .firstSwiper .swiper-slide {
+            width: 240px;
+            height: 72px;
+            margin-right: 24px;
+            margin-bottom: 16px;
+        }
+        .secondSwiper {
+            display: flex;
+            flex-wrap: wrap !important;
+            padding-top: 24px;
+            justify-content: space-between;
+        }
+        .secondSwiperHide {
+            height: 160px !important;
+            overflow: hidden;
+        }
+        .secondSwiper .swiper-slide {
+            margin: 0 24px 24px 24px;
+            width: 224px !important;
+            height: 160px;
+        }
+        .firstSwiper,
+        .secondSwiper {
+            transform: none !important;
+        }
+    }
+    
+    @media(min-width: 1120px) {}
+    /* Ремон различных брендов */
+    
+    #show_more1,
+    #show_more2 {
+        background-color: #F8F8F8;
+        border: none;
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: right;
+        width: 160px;
+        height: 30px;
+        margin-left: 8px;
+        display: flex;
+    }
+    
+    #show_more1 span,
+    #show_more2 span {
+        transform: translateY(1px) translateX(10px);
+    }
+    
+    .rotate {
+        transform: rotate(180deg);
+        transition: 1.5s;
+    }
+    
+    #show_more .text-hide {
+        display: none;
+    }
+    /* Ремонт техники различных видов */
+    
+    .types__header {
+        font-family: TT Lakes;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding: 16px;
+        background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    }
+    
+    .types__button {
+        width: 240px;
+        height: 160px;
+        padding: 16px;
+        background: url("images/arrow.svg") no-repeat 90% 85%;
+        background-color: white;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+    }
+    
+    @media (max-width: 767px) {
+        .types {
+            margin: 0 auto 0 auto;
+        }
+    }
+    
+    .typesSwiper {
+        display: flex;
+    }
+    
+    .swiper-slide {
+        width: 100%;
+        margin-right: 0;
+    }
+    /* Цены на услуги */
+    
+    @media (min-width: 768px) {
+        .swiper-disable {
+            position: static;
+        }
+    }
+    
+    .prices__header {
+        height: 56px;
+        border-top: 1px solid #D9FFF5;
+        background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+        padding: 16px;
+    }
+    /* Нижний раздел */
+    
+    .bottom_description {
+        padding: 24px;
+        font-family: TT Lakes;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        max-width: 421px;
+    }
+    
+    .bottom_get {
+        font-family: TT Lakes;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 24px;
+        display: flex;
+    }
+    
+    .bottom_get::after {}
