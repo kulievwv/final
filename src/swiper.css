@@ -1,0 +1,10 @@
+@media(min-width: 768px) {
+    .swiper,
+    .swiper-wrapper,
+    .swiper-slide {
+        flex-shrink: unset !important;
+    }
+    .swiper-pagination-2 {
+        transform: translateY(-200px) !important;
+    }
+}
